@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Heading,
-  Image,
-} from "@chakra-ui/react";
+import { Heading, Image } from "@chakra-ui/react";
 import * as API from "./services/launches";
 import logo from "./assets/spacex_logo.png";
 import { LaunchItem } from "./components/LaunchItem";
@@ -21,9 +18,9 @@ export function App() {
         SpaceX Launches
       </Heading>
       <section>
-      {launches.map((launch) => (
-        <LaunchItem key={launch.flight_number} {...launch}/>
-      ))}
+        {launches.map((launch) => (
+          <LaunchItem key={launch.flight_number} {...launch} />
+        ))}
       </section>
     </>
   );
