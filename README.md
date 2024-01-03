@@ -48,3 +48,4 @@ yarn create vite my-react-app --template react-swc
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is a very light-weight solution for testing React components. It provides light utility functions on top of [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/) by adding APIs for working with React components.
 - [ESLint](https://eslint.org/) is a pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. It is configured with [Prettier](https://prettier.io/) to format code automatically.
 - [VS Code](https://code.visualstudio.com/) is a popular code editor that supports [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) out of the box. It is configured to format code automatically on save.
+
