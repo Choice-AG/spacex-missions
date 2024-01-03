@@ -19,3 +19,13 @@ export async function getLaunchByFlightNumber(flightNumber) {
     console.error(error);
   }
 }
+
+export async function getLaunchesByRocketId(rocketId) {
+  try {
+    const response = await fetch(`${API_URL}/rockets/${rocketId}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}

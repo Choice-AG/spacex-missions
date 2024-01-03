@@ -1,4 +1,5 @@
 import { Box, Flex, Spacer, Text, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import LaunchTag from "./LaunchTag";
 import LaunchDate from "./LaunchDate";
 
@@ -11,12 +12,14 @@ export function LaunchItem(launch) {
           <strong>
             {launch.mission_name} ({launch.launch_year})
           </strong>
-          <LaunchDate {...launch} />
         </Text>
         <Spacer />
         <LaunchTag {...launch} />
       </Flex>
-      <Button colorScheme="purple">More Details</Button>
+      <LaunchDate {...launch} />
+      <Link to={`/launch/${launch.flight_number}`}>
+        <Button colorScheme="purple">More Details</Button>
+      </Link>
     </Box>
   );
 }
