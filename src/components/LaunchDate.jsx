@@ -1,9 +1,5 @@
 import { HiCalendar } from "react-icons/hi";
-import {
-  Flex,
-  Text,
-  Icon
-} from "@chakra-ui/react";
+import { Flex, Text, Icon } from "@chakra-ui/react";
 import dayjs from "dayjs";
 
 export default function LaunchDate(launch) {
